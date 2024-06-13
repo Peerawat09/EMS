@@ -1,5 +1,5 @@
 
-@extends('layout')
+@extends('layouts.iframe')
 @section('title','website')
     
 
