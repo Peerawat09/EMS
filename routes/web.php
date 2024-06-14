@@ -17,6 +17,9 @@ Route::get('about', function () {
 Route::get('dashboard', function(){
     return view('dashboard');
 });
+Route::get('Equipment', function(){
+    return view('Equipment');
+});
 Route::get('formEquiment/importEquiment', function(){
     return view('formEquiment/importEquiment');
 });
