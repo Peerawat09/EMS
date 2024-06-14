@@ -181,12 +181,12 @@
                     <a class="nav-item dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }}
                     </a>
-                    {{-- <div class="image">
+                    <!-- {{-- <div class="image">
                         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div> --}}
                     {{-- <div class="info">
                         <a href="#" class="d-block">Alexander Pierce</a>
-                    </div> --}}
+                    </div> --}} -->
                 </div>
 
                 <!-- SidebarSearch Form -->
@@ -209,7 +209,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <div class="nav-item">
-                            <a href="pages/index.html" class="nav-link">
+                            <a href="./dashboard" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -256,7 +256,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tree"></i>
                                 <p>
@@ -314,7 +314,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-edit"></i>
@@ -325,15 +325,15 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="pages/forms/general.html" class="nav-link">
+                                    <a href="formEquiment/importEquiment" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>General Elements</p>
+                                        <p>Import Equiment</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="pages/forms/advanced.html" class="nav-link">
+                                    <a href="formEquiment/exportEquiment" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Advanced Elements</p>
+                                        <p>Export Equiment</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -342,12 +342,12 @@
                                         <p>Editors</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="pages/forms/validation.html" class="nav-link">
+                                {{-- <li class="nav-item"> --}}
+                                    {{-- <a href="pages/forms/validation.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Validation</p>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </li>
                         <li class="nav-item">
