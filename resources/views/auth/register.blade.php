@@ -19,10 +19,10 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: lightblue;
+            background: url('/img/KU_blur.png') no-repeat center center;
         }
 
-        .warpper {
+        .wrapper {
             width: 420px;
             background: transparent;
             color: white;
@@ -31,7 +31,7 @@
             border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
-        .warpper h1 {
+        .wrapper h1 {
             font-size: 36px;
             text-align: center;
         }
@@ -114,13 +114,13 @@
 </head>
 
 <body>
-    <div class="warpper">
+    <div class="wrapper">
         <form method="POST" action="{{ route('register') }}">
             @csrf
             <h1>Register</h1>
+            
             <div class="input-box">
-            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
-            <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                <input type="text" name="name" placeholder="Name" required>
                 <i class='bx bxs-user'></i>
                 @error('name')
                     <span class="invalid-feedback" role="alert">
@@ -130,39 +130,33 @@
             </div>
 
             <div class="input-box">
-            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
+                <input type="email" name="email" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
                 @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
-                <i class='bx bxs-envelope'></i>
             </div>
 
             <div class="input-box">
-            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
+                <input type="password" name="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
                 @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
                     </span>
                 @enderror
-                <i class='bx bxs-lock-alt'></i>
             </div>
+
             <div class="input-box">
-            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                <input type="password" name="password_confirmation" placeholder="Confirm Password" required>
                 <i class='bx bxs-lock-alt'></i>
             </div>
 
-
-            <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
+            <button type="submit" class="btn">
+                Register
+            </button>
         </form>
     </div>
 </body>
