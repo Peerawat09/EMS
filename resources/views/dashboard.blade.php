@@ -9,8 +9,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
         integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='chart1.js'></script>
-
+    
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -32,6 +31,10 @@
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -49,7 +52,7 @@
                     <i class="fas fa-shopping-cart"></i>
                 </div>
                 <a href="Equipment" class="small-box-footer">
-                    More info <i class="fas fa-arrow-circle-right"  ></i>
+                    More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
         </div>
@@ -107,6 +110,23 @@
         <!-- ./col -->
     </div>
 
+     <!-- <div class="card card-success">
+        <div class="card-header">
+            <h3 class="card-title">Bar Chart</h3>
+
+            <div class="card-tools">
+
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="chart">
+                <canvas id="barChart"
+                    style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+            </div>
+        </div>
+        
+    < </div> -->
+
     <!-- <div class="card card-success">
         <div class="card-header">
             <h3 class="card-title">Bar Chart</h3>
@@ -121,40 +141,83 @@
                     style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
             </div>
         </div>
-        /.card-body -->
-    <!-- </div>
-
-    <div class="card card-success">
-        <div class="card-header">
-            <h3 class="card-title">Bar Chart</h3>
-
-            <div class="card-tools">
-
-            </div>
-        </div>
-        <div class="card-body">
-            <div class="chart">
-                <canvas id="barChart"
-                    style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
-            </div>
-        </div>
-        <!-- /.card-body -->
-    </div> -->
+        
+    </div>
 
     <div class='container'>
         <div class='chart'>
-            <canvas id='barchart' whidth='300' height='300' ></canvas>
+            <canvas id='barchart' whidth='400' height='200'></canvas>
+          
         </div>
 
-        
+
     </div>
-    
+    <script src="chart1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
+
+</body> -->
+<div class="row">
+    <div class="col -mb-6">
+        <div class="card ">
+            <div class="card-head">
+                Charts
+
+
+            </div>
+            <div class="card-body">
+            <canvas id='myChart' whidth='400' height='200'></canvas>
+            <script src="asset/js/chart1.js">
+
+// var ctx = document.getElementById('myChart').getContext('2d');
+
+// // Create a new Chart instance
+// var myChart = new Chart(ctx, {
+//     type: 'bar', // Specify the chart type: 'bar', 'line', 'pie', 'doughnut', etc.
+//     data: {
+//         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'], // Define the labels for the X axis
+//         datasets: [{
+//             label: '# of Votes',
+//             data: [12, 19, 3, 5, 2, 3], // Data points for the chart
+//             backgroundColor: [ // Colors for each bar
+//                 'rgba(255, 99, 132, 0.2)',
+//                 'rgba(54, 162, 235, 0.2)',
+//                 'rgba(255, 206, 86, 0.2)',
+//                 'rgba(75, 192, 192, 0.2)',
+//                 'rgba(153, 102, 255, 0.2)',
+//                 'rgba(255, 159, 64, 0.2)'
+//             ],
+//             borderColor: [ // Border colors for each bar
+//                 'rgba(255, 99, 132, 1)',
+//                 'rgba(54, 162, 235, 1)',
+//                 'rgba(255, 206, 86, 1)',
+//                 'rgba(75, 192, 192, 1)',
+//                 'rgba(153, 102, 255, 1)',
+//                 'rgba(255, 159, 64, 1)'
+//             ],
+//             borderWidth: 1 // Border width for each bar
+//         }]
+//     },
+//     options: {
+//         scales: {
+//             y: {
+//                 beginAtZero: true // Ensure the y-axis begins at zero
+//             }
+//         }
+//     }
+// });
+            </script>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
 
 
 
 
 
 
-</body>
 
 </html>
