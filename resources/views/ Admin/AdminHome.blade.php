@@ -38,6 +38,7 @@
 </head>
 <!-- for admin -->
 <body>
+    <h1>is admin </h1>
     <h5 class="mb-2 mt-4">DashBoard</h5>
     <div class="row">
         <div class="col-lg-3 col-6">
@@ -51,7 +52,7 @@
                 <div class="icon">
                     <i class="fas fa-shopping-cart"></i>
                 </div>
-                <a href="users/Equipment" class="small-box-footer">
+                <a href="Equipment" class="small-box-footer">
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
